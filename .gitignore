@@ -1,0 +1,47 @@
+# Python/runtime
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments
+.venv/
+venv/
+venvs/
+envs/
+*.egg-info/
+
+# Model/data artifacts
+datasets/
+hf_cache/
+outputs/
+runs/
+ohora_runs/
+checkpoint-*/
+sft_lora_model/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# Experiment logs/results
+*.log
+progress.log
+summary.csv
+GPT-j-6B-ohora-*.json
+all_results.json
+train_results.json
+trainer_state.json
+
+# Local large/reference files
+*.pdf
+*.tar
+*.tar.gz
+*.zip
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
