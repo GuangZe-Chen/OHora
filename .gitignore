@@ -19,6 +19,17 @@ datasets/*
 !datasets/test/
 !datasets/test/**
 datasets/task_ft/
+!datasets/task_ft/
+!datasets/task_ft/gsm8k/
+datasets/task_ft/gsm8k/*
+!datasets/task_ft/gsm8k/gsm8k_train.json
+!datasets/task_ft/humaneval/
+datasets/task_ft/humaneval/*
+!datasets/task_ft/humaneval/humaneval_train.json
+!datasets/task_ft/mt_bench/
+datasets/task_ft/mt_bench/*
+!datasets/task_ft/mt_bench/mt_bench_train.json
+datasets/task_ft/mmlu/
 hf_cache/
 outputs/
 runs/

@@ -10,6 +10,8 @@ The main reproducible experiment is:
 - initialization methods: `classic`, `relative_scores`, `relative_scores_mix`, `classic_mix_rerank`
 - evaluation: BoolQ, PIQA, SocialIQA, HellaSwag, WinoGrande, ARC-Challenge, ARC-Easy, OpenBookQA
 
+See [EXPERIMENTS.md](EXPERIMENTS.md) for the full experiment inventory, including the original 24-run selection suite and the other task families present in the codebase.
+
 Model weights, checkpoints, logs, caches, and run outputs are intentionally not tracked by git. The commonsense training/evaluation JSON files are tracked so the LLaMA-2 commonsense experiment can be reproduced from this repository plus a local model checkpoint.
 
 ## Environment
