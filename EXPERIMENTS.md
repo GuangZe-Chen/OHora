@@ -68,6 +68,47 @@ Use:
 --ohora_mix_alpha 0.5
 ```
 
+## Main Fine-tuning Hyperparameters
+
+These are the task/model hyperparameters used or planned for the broader OHoRA fine-tuning experiments. `Batch size` refers to effective batch size unless an individual script states otherwise.
+
+### Commonsense Reasoning
+
+| Model | Learning rate | Batch size | Warmup | Train epochs |
+| --- | ---: | ---: | --- | ---: |
+| LLaMA-2-7B | `5e-4` | 8 | ratio `0.01` | 3 |
+| LLaMA-3-8B | `5e-4` | 8 | steps `30` | 3 |
+
+### HumanEval
+
+| Model | Learning rate | Batch size | Warmup | Train epochs |
+| --- | ---: | ---: | --- | ---: |
+| LLaMA-2-7B | `6e-4` | 3 | ratio `0.01` | 1 |
+| LLaMA-3.1-8B-Instruct | `2e-4` | 3 | ratio `0.01` | 1 |
+| Gemma-7B | `5e-4` | 3 | ratio `0.01` | 1 |
+
+### MMLU
+
+| Model | Learning rate | Batch size | Warmup | Train epochs |
+| --- | ---: | ---: | --- | ---: |
+| LLaMA-2-7B | `2e-4` | 3 | ratio `0.01` | 1 |
+| LLaMA-3.1-8B-Instruct | `2e-4` | 3 | ratio `0.01` | 1 |
+| Gemma-7B | `3e-4` | 3 | ratio `0.01` | 1 |
+
+### MT-Bench
+
+| Model group | Learning rate | Batch size | Warmup | Train epochs |
+| --- | ---: | ---: | --- | ---: |
+| All models | `2e-4` | 3 | ratio `0.01` | 1 |
+
+### GSM8K
+
+| Model | Learning rate | Batch size | Warmup | Train epochs |
+| --- | ---: | ---: | --- | ---: |
+| LLaMA-2-7B | `3e-4` | 3 | ratio `0.01` | 1 |
+| LLaMA-3.1-8B-Instruct | `3e-4` | 3 | ratio `0.01` | 1 |
+| Gemma-7B | `3e-4` | 3 | ratio `0.01` | 1 |
+
 ## Task Families in the Codebase
 
 ### Commonsense Reasoning
