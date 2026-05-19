@@ -13,7 +13,12 @@ envs/
 *.egg-info/
 
 # Model/data artifacts
-datasets/
+datasets/*
+!datasets/commonsense_reasoning/
+!datasets/commonsense_reasoning/**
+!datasets/test/
+!datasets/test/**
+datasets/task_ft/
 hf_cache/
 outputs/
 runs/
